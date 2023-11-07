@@ -1,0 +1,156 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+header, .search-bar input, .search-bar button, .search-form input, .search-form button {
+    background-color: #333;
+    color: #fff;
+}
+
+header {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#suggestionList {
+    position: absolute;
+    width: calc(100% - 2px);
+    max-height: 150px;
+    overflow-y: auto;
+    display: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    z-index: 999;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+
+#suggestionList li {
+    cursor: pointer;
+    padding: 8px;
+    border-bottom: 1px solid white;
+}
+
+.destino_main {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.destino {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.destino label,
+.destino input,
+.destino button {
+    margin-bottom: 10px;
+}
+
+.destino input {
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.all-destinations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Centraliza as colunas */
+}
+
+.destination-item {
+    width: calc(30% - 20px);
+    margin: 10px;
+    text-align: center;
+}
+
+.main-content {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    text-align: center;
+    color: #333;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #e44d26;
+}
+
+.buy-button {
+    background-color: #e44d26;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.popular-destinations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quick-links a {
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+}
